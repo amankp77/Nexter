@@ -13,6 +13,8 @@ burg.addEventListener('click', ()=>{
 
 navbox.forEach(nav => {
         nav.addEventListener('click',()=>{
+            burg.classList.toggle('close')
             sidebar.classList.toggle('open')
+            container.classList.toggle('open')
         })
 });
