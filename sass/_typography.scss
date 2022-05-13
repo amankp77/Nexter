@@ -9,6 +9,10 @@
     font-size: 4.5rem;
     color: white;
     line-height: 1;
+
+    @media screen and (max-width:$m-small) {
+        font-size: 3.5rem;
+    }
    
     
 }

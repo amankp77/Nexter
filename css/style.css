@@ -33,6 +33,9 @@ body {
   font-size: 4.5rem;
   color: white;
   line-height: 1; }
+  @media screen and (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 3.5rem; } }
 
 .heading-2 {
   font-size: 4rem;
@@ -156,6 +159,10 @@ body {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center; }
+    @media screen and (max-width: 50em) {
+      .header__logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 6rem); } }
     .header__logos img {
       filter: brightness(70%);
       max-height: 2.5rem;

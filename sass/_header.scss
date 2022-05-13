@@ -29,6 +29,12 @@
         align-items: center;
         justify-items: center;
 
+        @media screen and (max-width:$m-medium) {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,6rem);
+        }
+    
+
         img{
             filter: brightness(70%);
             max-height: 2.5rem;
