@@ -10,6 +10,8 @@
     align-items: center;
     grid-gap: minmax(1rem,4rem);
 
+    
+
 
     @media screen and (max-width:$m-medium) {
         grid-area: header-start/full-end/header-end/full-start;

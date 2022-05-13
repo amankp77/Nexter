@@ -62,5 +62,13 @@ body{
         grid-template-columns:  [full-start] minmax(4rem,1fr) repeat(8,[col-start] minmax(min-content,14rem) [col-end])  minmax(4rem,1fr) [full-end];
         grid-template-rows: [sidebar-start] 8rem [sidebar-end header-start] 75vh [header-end relator-start]min-content[relator-end feature-start] min-content[feature-end story-c-start]min-content[story-c-end story-p-start] min-content[story-p-end homes-start] min-content[homes-end gallery-start] min-content[gallery-end footer-start] min-content[footer-end];
     }
+
+   
+}
+
+.container.open{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
