@@ -1,0 +1,75 @@
+.sidebar{
+    grid-area: 1/nav-end/-1/nav-start;
+    background-color: $color-primary;
+
+    @media screen and (max-width:$m-large) {
+       grid-area: sidebar-start/full-end/sidebar-end/full-start;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       padding-right: 3rem;
+       padding-top: 3rem;
+    }
+}
+
+
+
+.burg-cont{
+    // background-color: red;
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem 1rem;
+    
+
+
+    .burg{
+        display: inline-block;
+        height: 0.3rem;
+        width: 5.5rem;
+        background-color: white;
+        position: relative;
+    }
+
+    .burg::after{
+        content: "";
+        height: 0.3rem;
+        width: 5.5rem;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        background-color: white;
+        transition: all 0.3s;
+
+        
+        
+    }
+    .burg::before{
+        content: "";
+        height: 0.3rem;
+        width: 5.5rem;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        background-color: white;
+        transition: all 0.3s;
+
+        
+    }
+
+   
+}
+
+.burg-cont.close{
+    .burg{
+       height: 0;
+    }
+
+    .burg::after{
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .burg::before{
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
